@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="error"></div>
+    <form id="form1" name="f" action="confi.html" method="POST">
+  
+  
+      <fieldset><legend><h1>Inscription</h1></legend>
+     <div class="container">
+  
+      <div class="items">
+      <div class="items1"><label for="name">Prénom & Nom:</label>
+      </div>
+       <div class="items1"><label for="name">CIN:</label></div>
+        <div class="items1"><label for="email">Adresse e-mail:</label></div>
+        <div class="items1"><label for="Niveau">Niveau Scolaire:</label></div>
+        <div class="items1"><label for="Modules de formation">Modules de formation:</label></div>
+  
+  
+          </div>
+          <div class="items2">
+
+            <div class="items1"><input id="name" name="name "type="text" required pattern='[A-z" "]{6,20}' ></div>
+            <div class="items1"><input id="CIN" name="CIN "type="text" required pattern= "[0-9]{8}" maxlength ="8" minlength="8"  >
+              </div>
+            <div class="items1"> <input type="email" placeholder="Contact@exemple.com" name="email" required></div>
+            <div id="items4"> <input type="radio" name="niveau" value="s" checked>
+                  secondaire
+                   <input type="radio" name="niveau" value="u" checked>
+                     Universitaire
+                   <input type="radio" name="niveau" value="A" checked>
+                    Autre
+               </div>
+        
+              <div class="itmes1">
+                <select multiple>
+                  <option value="H5">html5</option>
+                  <option value="C3">css3</option>
+                  <option value="JS">javascript</option>
+                 <option value="JQ">jquery</option>
+               </select>
+              </div>
+         </div>
+        </div>
+        <div class="items4"><label for="name">(*)Champs obligatoires:</label>
+        </div>
+         
+        <div id="items5">
+           <button><input onclick="return verif()" type="submit" value="confirmer"></button>
+           <button type="submit">Annuler </button>
+        
+          </div>
+         
+        </fieldset>
+        </form>
+    
+            
+            
+
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>
